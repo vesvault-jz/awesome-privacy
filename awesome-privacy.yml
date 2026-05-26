@@ -1519,7 +1519,7 @@ categories:
       - name: LibRedirect
         url: https://libredirect.github.io
         github: libredirect/browser_extension
-        icon: https://github.com/libredirect/browser_extension/blob/master/img/libredirect_full.svg
+        icon: https://raw.githubusercontent.com/libredirect/browser_extension/refs/heads/master/src/assets/images/libredirect.svg
         description: |
           A browser extension that redirects popular sites to alternative privacy friendly frontends
           **Download**: [Firefox](https://addons.mozilla.org/firefox/addon/libredirect/) - [Chrome](https://libredirect.github.io/download_chromium.html)

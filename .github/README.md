@@ -87,6 +87,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Anti-Malware](#anti-malware) (2)
 - **Development**
 	- [Code Hosting](#code-hosting) (5)
+	- [IDEs](#ides) (1)
 - **Smart Home & IoT**
 	- [Smart Home](#smart-home) (1)
 - **Finance**
@@ -1699,7 +1700,8 @@ so it is important to go with a trusted vendor, and monitor its activity closely
 
 ### IDEs
 
-<p  align="center"><b>⚠️ This section is still a work in progress ⚠️</b><br /><i>Check back soon, or help us complete it by submitting a pull request</i></p>
+- **[<img src='https://avatars.githubusercontent.com/u/40327449?s=200&v=4' width='14' alt='' /> VSCodium](https://vscodium.com/)** - Free and open source binaries of VS Code, built without Microsoft branding and with community-driven defaults. Extension compatibility can differ from Microsoft's official VS Code build. 
+
 <p align="right"><sup><a href="#top">⬆️ [Back to Top]</a></sub></p>
 
 ---

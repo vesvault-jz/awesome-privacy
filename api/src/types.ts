@@ -7,6 +7,8 @@ export interface ShortService {
 
 export interface Service extends ShortService {
   github?: string;
+  codeberg?: string;
+  git?: string;
   icon?: string;
   followWith?: string;
   securityAudited?: boolean;

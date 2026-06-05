@@ -6,7 +6,7 @@ Checks:
 - https-url: homepage URL uses HTTPS
 - icon-reachable: icon URL does not 404
 - description-len: description is 50 to 280 chars (over 420 escalates to warn)
-- opensource-github: openSource listings include a github field
+- opensource-github: openSource listings include a github, codeberg or git field
 - duplicate-url: no URL appears in more than one listing
 - androidApp-valid: androidApp is a package name, not a URL
 - iosApp-reachable: App Store URL resolves
@@ -222,10 +222,14 @@ def _description_len(entry: Entry, ctx: Context) -> Iterable[Finding]:
 
 @check("opensource-github")
 def _opensource_github(entry: Entry, ctx: Context) -> Iterable[Finding]:
-    """openSource: true services must include a github field."""
-    if entry.service.get("openSource") is True and not entry.service.get("github"):
-        yield _finding(entry, "opensource-github", "warn",
-                       "marked openSource but missing `github` field")
+    """openSource: true services must include a github, codeberg or git field."""
+    svc = entry.service
+    if svc.get("openSource") is True and not (
+        svc.get("github") or svc.get("codeberg") or svc.get("git")
+    ):
+        yield _finding(entry, "opensource-github", "error",
+                       "marked openSource but missing a repository link "
+                       "(`github`, `codeberg` or `git`)")
 
 
 @check("androidApp-valid")

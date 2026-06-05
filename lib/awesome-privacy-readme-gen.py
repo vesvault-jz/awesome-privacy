@@ -5,13 +5,17 @@ formats into markdown, and inserts into README.md
 
 import os
 import re
+import sys
 import yaml
 import logging
 from urllib.parse import urlparse
 
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import utils
+
 # Configure Logging
 LOG_LEVEL = os.environ.get("LOG_LEVEL", "INFO").upper()
-logging.basicConfig(level=LOG_LEVEL)
+utils.setup_logging(LOG_LEVEL)
 logger = logging.getLogger(__name__)
 
 # Determine the project root based on the script's location
@@ -116,7 +120,10 @@ def makeAwesomePrivacy(data):
           # If word of warning exists, append it
           if section.get('wordOfWarning'):
             markdown += "<details>\n<summary>⚠️ <b>Word of Warning</b></summary>\n\n"
-            markdown += f"> {section.get('wordOfWarning')}\n\n"
+            word_of_warning = '\n'.join(
+              f"> {line}".rstrip() for line in section.get('wordOfWarning').strip().split('\n')
+            )
+            markdown += f"{word_of_warning}\n\n"
             markdown += "</details>\n\n"
           # If notable mentions exists, append it (either as a list or a single string)
           if section.get('notableMentions'):

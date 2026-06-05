@@ -20,6 +20,7 @@ Excuse the code, it's a bit scrappy! But it's never used in the prod app.
 
 import argparse
 import json
+import logging
 import os
 import sys
 from datetime import datetime, timezone
@@ -27,6 +28,9 @@ from urllib.parse import urlparse
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import utils
+
+utils.setup_logging()
+logger = logging.getLogger(__name__)
 
 DIFF_PATH = "/tmp/pr-diff.json"
 OUTPUT_PATH = "/tmp/repo-stats.md"
@@ -54,7 +58,7 @@ def _api_get(url, params=None, timeout=TIMEOUT, headers=None):
         if resp.status_code == 200:
             return resp.json()
     except Exception as e:
-        print(f"Fetch failed for {url}: {e}", file=sys.stderr)
+        logger.warning("Fetch failed for %s: %s", url, e)
     return None
 
 
@@ -494,7 +498,7 @@ def _resolve_args(argv):
         if args.repo:
             owner, repo = utils.parse_github_field(args.repo)
             if not owner:
-                print(f"Invalid repo format: {args.repo}", file=sys.stderr)
+                logger.error("Invalid repo format: %s", args.repo)
                 sys.exit(1)
             result["owner"], result["repo"] = owner, repo
         return [result]
@@ -504,7 +508,7 @@ def _resolve_args(argv):
         with open(DIFF_PATH) as f:
             diff = json.load(f)
     except Exception:
-        print("No arguments and no diff file found", file=sys.stderr)
+        logger.info("No arguments and no diff file found, nothing to look up")
         sys.exit(0)
 
     field_map = {"github": "owner", "url": "url", "androidApp": "android",
@@ -524,9 +528,10 @@ def _resolve_args(argv):
             services.append(result)
 
     if not services:
-        print("No checkable fields found in diff", file=sys.stderr)
+        logger.info("No checkable fields found in diff")
         sys.exit(0)
 
+    logger.info("Found %d service(s) with checkable fields in diff", len(services))
     return services
 
 
@@ -535,19 +540,21 @@ def _build_service_sections(args, token):
     sections = []
 
     if args["owner"] and args["repo"]:
+        logger.info("Fetching repo stats for %s/%s", args["owner"], args["repo"])
         data = fetch_all_data(args["owner"], args["repo"], token)
         if data:
             sections.append(("Repo Stats", format_markdown(grade_stats(data))))
         else:
-            print(f"Failed to fetch repo data for {args['owner']}/{args['repo']}", file=sys.stderr)
+            logger.warning("Failed to fetch repo data for %s/%s", args["owner"], args["repo"])
 
     if args["url"]:
         parsed_url = urlparse(args["url"])
         if parsed_url.hostname and parsed_url.hostname.rstrip(".").endswith("github.com"):
-            print(f"Skipped website checks, since github repo was specified: {args['url']}", file=sys.stderr)
+            logger.info("Skipped website checks, github repo was specified: %s", args["url"])
             sections.append(("Website Checks",
                              f"- {ORANGE} **Skipped** web checks, since repo URL was submitted instead of a website"))
         else:
+            logger.info("Fetching website checks for %s", args["url"])
             site_data = fetch_website_data(args["url"])
             has_sec_txt = check_security_txt(args["url"])
             if site_data or has_sec_txt is not None:
@@ -555,25 +562,28 @@ def _build_service_sections(args, token):
                                  format_markdown(grade_website_stats(site_data, args["url"], has_sec_txt))))
 
     if args["android"]:
+        logger.info("Fetching Android app info for %s", args["android"])
         data = fetch_android_data(args["android"])
         if data:
             sections.append(("Android App", format_markdown(grade_android_stats(data))))
         else:
-            print(f"Failed to fetch Android data for {args['android']}", file=sys.stderr)
+            logger.warning("Failed to fetch Android data for %s", args["android"])
 
     if args["ios"]:
+        logger.info("Fetching iOS app info for %s", args["ios"])
         data = fetch_ios_data(args["ios"])
         if data:
             sections.append(("iOS App", format_markdown(grade_ios_stats(data))))
         else:
-            print(f"Failed to fetch iOS data for {args['ios']}", file=sys.stderr)
+            logger.warning("Failed to fetch iOS data for %s", args["ios"])
 
     if args["tosdr"]:
+        logger.info("Fetching ToS;DR privacy policy for %s", args["tosdr"])
         data = fetch_tosdr_data(args["tosdr"])
         if data:
             sections.append(("Privacy Policy", format_markdown(grade_tosdr_stats(data))))
         else:
-            print(f"Failed to fetch ToS;DR data for {args['tosdr']}", file=sys.stderr)
+            logger.warning("Failed to fetch ToS;DR data for %s", args["tosdr"])
 
     return sections
 
@@ -587,6 +597,8 @@ def main():
         all_md_parts = []
 
         for svc_args in all_services:
+            if svc_args.get("name"):
+                logger.info("Looking up submission info for %s", svc_args["name"])
             sections = _build_service_sections(svc_args, token)
             if not sections:
                 continue
@@ -609,9 +621,9 @@ def main():
         else:
             with open(OUTPUT_PATH, "w") as f:
                 f.write(md + "\n")
-            print(f"Stats written to {OUTPUT_PATH}")
+            logger.info("Submission stats written to %s", OUTPUT_PATH)
     except Exception as e:
-        print(f"make-info-stats failed: {e}", file=sys.stderr)
+        logger.error("make-info-stats failed: %s", e, exc_info=True)
 
     sys.exit(0)
 

@@ -89,6 +89,8 @@ corporations, governments, and hackers from logging, storing or selling your per
 - **Development**
 	- [Code Hosting](#code-hosting) (5)
 	- [IDEs](#ides) (1)
+- **Developer Utilities**
+	- [Developer Tools](#developer-tools) (1)
 - **Smart Home & IoT**
 	- [Smart Home](#smart-home) (1)
 - **Finance**
@@ -1706,9 +1708,12 @@ Cross-platform, open source malware detection and virus prevention tools
 
 ---
 
-### Developer Utilities
+## Developer Utilities
 
-<p  align="center"><b>⚠️ This section is still a work in progress ⚠️</b><br /><i>Check back soon, or help us complete it by submitting a pull request</i></p>
+### Developer Tools
+
+- **[<img src='https://devtoys.app/favicon.ico' width='14' alt='' /> DevToys](https://devtoys.app/)** - Open-source offline toolbox for developers, with utilities for JSON, YAML, hashes, JWTs, Base64, text comparison and more. Useful alternative to pasting sensitive data into random online tools. 
+
 <p align="right"><sup><a href="#top">⬆️ [Back to Top]</a></sub></p>
 
 ---

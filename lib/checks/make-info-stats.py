@@ -44,27 +44,14 @@ RESTRICTIVE_LICENSES = {
 
 SESSION = utils.make_session(user_agent=USER_AGENT)
 
-API_URL = os.environ.get("API_URL", "https://api.awesome-privacy.xyz").rstrip("/")
 API_TOKEN = os.environ.get("API_TOKEN", "")
 
 GREEN, ORANGE, RED, BLUE, WHITE = "\U0001f7e2", "\U0001f7e0", "\U0001f534", "\U0001f535", "\u26aa"
 
 
-def _api_get(url, params=None, timeout=TIMEOUT, headers=None):
-    """GET a URL, return parsed JSON on 200, else None."""
-    try:
-        resp = SESSION.get(url, headers=headers, timeout=timeout, params=params)
-        if resp.status_code == 200:
-            return resp.json()
-    except Exception as e:
-        logger.warning("Fetch failed for %s: %s", url, e)
-    return None
-
-
 def _enrich_get(path, params=None, timeout=TIMEOUT):
-    """GET an enrichment endpoint on the unified API, adding auth when configured."""
-    headers = {"Authorization": f"Bearer {API_TOKEN}"} if API_TOKEN else None
-    return _api_get(f"{API_URL}/v1/enrich/{path}", params=params, headers=headers, timeout=timeout)
+    """GET a unified-API enrichment endpoint with this script's session and token."""
+    return utils.enrich_get(path, params=params, token=API_TOKEN, session=SESSION, timeout=timeout)
 
 
 def relative_time(iso_str):
@@ -271,7 +258,7 @@ def grade_stats(data):
     if adv is None:
         stats.append((WHITE, "Security Advisories", "Unknown"))
     elif adv > 0:
-        stats.append((ORANGE, "Security Advisories", f"{adv} unpatched CVEs"))
+        stats.append((ORANGE, "Security Advisories", f"{adv} potentially unpatched CVEs"))
     else:
         stats.append((GREEN, "Security Advisories", "No unpatched active CVEs found"))
 
@@ -421,6 +408,14 @@ def fetch_android_data(package_id):
     return data if data and not data.get("error") else None
 
 
+_DEGOOGLED = {
+    "gold": (GREEN, "Gold (works)"),
+    "silver": (GREEN, "Silver (minor issues)"),
+    "bronze": (ORANGE, "Bronze (limited)"),
+    "broken": (RED, "Broken"),
+}
+
+
 def grade_android_stats(data):
     """Grade Android app stats."""
     stats = []
@@ -442,6 +437,11 @@ def grade_android_stats(data):
     stats.append(_info_or_unknown("Downloads", data.get("downloads")))
     stats.append(_info_or_unknown("Created", _friendly_date(data.get("created"))))
     stats.append(_info_or_unknown("Last Updated", _friendly_date(data.get("updated"))))
+
+    status = utils.degoogled_status(data)
+    if status:
+        color, label = _DEGOOGLED.get(status, (BLUE, status.title()))
+        stats.append((color, "De-Googled", label))
 
     return stats
 

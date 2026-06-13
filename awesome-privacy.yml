@@ -4434,6 +4434,7 @@ categories:
       services:
       - name: Alacritty
         url: https://alacritty.org/
+        icon: https://alacritty.org/favicon.ico
         github: alacritty/alacritty
         openSource: true
         description: |

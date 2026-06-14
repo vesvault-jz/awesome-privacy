@@ -5077,7 +5077,7 @@ categories:
       alternativeTo: ['vlc', 'windows media player', 'quicktime', 'mplayer', 'kmplayer']
       services: []
 
-    - name: Photo Viewers
+    - name: Photo Management
       alternativeTo: ['google photos', 'windows photo viewer', 'adobe lightroom', 'apple photos', 'irfanview']
       services:
       - name: Immich

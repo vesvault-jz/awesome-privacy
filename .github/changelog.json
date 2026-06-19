@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-18T12:21:47Z",
+  "generatedAt": "2026-06-19T17:29:13Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
@@ -117,6 +117,7 @@
     "a6bf3b89641bd9837f6613af3816b872ff2c2e6d",
     "a9435899b546525af821d56d85f252eaa2767fa1",
     "aa8d1c9f7749c377ce32f712fc7b7e29ce65a4f1",
+    "aadc778402f75a16d2de88b7d38462c3d626b024",
     "ab6c8a515359942d7c20d9244904819c144c5db5",
     "ab9150fa71812ae4c395d499f1500d3c91b2b54c",
     "afc1bddb019a762fc3f2741547ffdc205c0bfe19",
@@ -125,6 +126,7 @@
     "b5a69fc359c36a1bb7ea05c0e29947f73930e189",
     "b718d9cd6c2f4b9c6129d4c9d6b70c1968a137f8",
     "b8b8fa712eba68ffcbf4812d12e5c5b9b45c075f",
+    "b922bc401cba34c27b79368fce3f572864b2ada0",
     "ba27593a5dcbfd58b4b9079277c54b0836d183d8",
     "bb76bb8677c29932746d94b0de20ac5bbe7e1447",
     "bbafb2908e2189ef959ebc5fa8ccfab91402f62f",
@@ -278,9 +280,90 @@
     613,
     619,
     625,
-    629
+    629,
+    637
   ],
   "entries": [
+    {
+      "date": "2026-06-19",
+      "sha": "b922bc401cba34c27b79368fce3f572864b2ada0",
+      "pr": {
+        "number": 638,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/638",
+        "author": "lissy93",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
+      },
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "gitGost",
+              "category": "Development",
+              "section": "Developer Tools"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2026-06-19",
+      "sha": "aadc778402f75a16d2de88b7d38462c3d626b024",
+      "pr": {
+        "number": 639,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/639",
+        "author": "lissy93",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
+      },
+      "changes": {
+        "services": {
+          "moved": [
+            {
+              "name": "Bruno",
+              "from": {
+                "category": "Developer Utilities",
+                "section": "Developer Tools"
+              },
+              "to": {
+                "category": "Development",
+                "section": "Developer Tools"
+              }
+            },
+            {
+              "name": "DevToys",
+              "from": {
+                "category": "Developer Utilities",
+                "section": "Developer Tools"
+              },
+              "to": {
+                "category": "Development",
+                "section": "Developer Tools"
+              }
+            }
+          ]
+        },
+        "sections": {
+          "moved": [
+            {
+              "from": {
+                "category": "Developer Utilities",
+                "section": "Developer Tools"
+              },
+              "to": {
+                "category": "Development",
+                "section": "Developer Tools"
+              }
+            }
+          ]
+        },
+        "categories": {
+          "removed": [
+            "Developer Utilities"
+          ]
+        }
+      }
+    },
     {
       "date": "2026-06-18",
       "sha": "104214a3189bf0dd489425bd748e1a544a289b0a",
@@ -5800,6 +5883,16 @@
     }
   ],
   "rejections": [
+    {
+      "date": "2026-06-19",
+      "title": "Adds gitGost to developer utils",
+      "pr": {
+        "number": 637,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/637",
+        "author": "lissy93",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
+      }
+    },
     {
       "date": "2026-06-16",
       "title": "Add OpenConvert to File Converters",

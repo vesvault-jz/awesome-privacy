@@ -1567,9 +1567,11 @@ categories:
     - name: Mobile Apps
       services:
       - name: Orbot
-        url: https://support.torproject.org/glossary/orbot/
-        github: guardianproject/orbot
-        icon: https://play-lh.googleusercontent.com/dIIbpr1fh-w7ykJJmfLyu6UH1HJ8bpFKEmyUlKqYHSEinG8v_B7mlqgeTzlFRhs0Uw=s48
+        url: https://orbot.app/
+        github: guardianproject/orbot-android
+        icon: https://raw.githubusercontent.com/guardianproject/orbot-android/master/fastlane/metadata/android/en-US/images/icon.png
+        androidApp: org.torproject.android
+        iosApp: https://apps.apple.com/us/app/orbot/id1609461599
         description: |
           System-wide Tor proxy, which encrypts your connection through multiple nodes.
           You can also use it alongside Tor Browser to access .onion sites.

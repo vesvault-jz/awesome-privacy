@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-04T19:43:27Z",
+  "generatedAt": "2026-07-05T18:15:52Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
@@ -173,6 +173,7 @@
     "f3adf137b0415999e4625ddc7e4ba26c2c56d4a9",
     "f3d9d9a7950d13baaae2f973600499f0d7b12e15",
     "f4332e985d4064559535b16397d9c35fdce587eb",
+    "f5492c30cce1c48fcdef67af9dc70d2d91074ee8",
     "f6467fe43a42b6b4a6e9e887ab0e4ae7accd93d8",
     "f987d9969923ee65464d0de187183719af278998",
     "fa1c504da13a0d2f8e75ef95566811e54750ff3d",
@@ -309,6 +310,88 @@
     659
   ],
   "entries": [
+    {
+      "date": "2026-07-05",
+      "sha": "f5492c30cce1c48fcdef67af9dc70d2d91074ee8",
+      "pr": {
+        "number": 661,
+        "url": "https://github.com/lissy93/awesome-privacy/pull/661",
+        "author": "lissy93",
+        "authorAvatar": "https://avatars.githubusercontent.com/u/1862727?v=4"
+      },
+      "changes": {
+        "services": {
+          "removed": [
+            {
+              "name": "DNS Cloak",
+              "category": "Networking",
+              "section": "DNS Clients"
+            },
+            {
+              "name": "Windows Secure Baseline",
+              "category": "Operating Systems",
+              "section": "Windows Defences"
+            },
+            {
+              "name": "SnoopSnitch",
+              "category": "Security Tools",
+              "section": "Mobile Apps"
+            }
+          ],
+          "modified": [
+            {
+              "name": "DuckDuckGo",
+              "category": "Essentials",
+              "section": "Search Engines",
+              "fields": [
+                "description",
+                "openSource"
+              ]
+            },
+            {
+              "name": "LibRedirect",
+              "category": "Security Tools",
+              "section": "Browser Extensions",
+              "fields": [
+                "url"
+              ]
+            },
+            {
+              "name": "NetGuard",
+              "category": "Security Tools",
+              "section": "Mobile Apps",
+              "fields": [
+                "androidApp",
+                "icon"
+              ]
+            },
+            {
+              "name": "Orbot",
+              "category": "Security Tools",
+              "section": "Mobile Apps",
+              "fields": [
+                "androidApp",
+                "github",
+                "icon",
+                "iosApp",
+                "url"
+              ]
+            },
+            {
+              "name": "Secure Remove",
+              "category": "Utilities",
+              "section": "Data Erasers",
+              "fields": [
+                "icon",
+                "url"
+              ]
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
     {
       "date": "2026-07-04",
       "sha": "1919b09028b9373338a1c1be36c88847fc59bc84",

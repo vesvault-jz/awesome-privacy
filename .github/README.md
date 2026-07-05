@@ -43,7 +43,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Team Collaboration](#team-collaboration) (6)
 - **Security Tools**
 	- [Browser Extensions](#browser-extensions) (19)
-	- [Mobile Apps](#mobile-apps) (23)
+	- [Mobile Apps](#mobile-apps) (22)
 	- [Online Tools](#online-tools) (17)
 - **Networking**
 	- [Virtual Private Networks](#virtual-private-networks) (7)
@@ -51,7 +51,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Anonymity Networks](#anonymity-networks) (3)
 	- [Proxies](#proxies) (2)
 	- [DNS Providers](#dns-providers) (3)
-	- [DNS Clients](#dns-clients) (6)
+	- [DNS Clients](#dns-clients) (5)
 	- [Firewalls](#firewalls) (13)
 	- [Ad Blockers](#ad-blockers) (7)
 	- [Host Block Lists](#host-block-lists) (5)
@@ -83,7 +83,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Mobile Operating Systems](#mobile-operating-systems) (2)
 	- [Desktop Operating Systems](#desktop-operating-systems) (5)
 	- [Linux Defenses](#linux-defenses) (6)
-	- [Windows Defences](#windows-defences) (17)
+	- [Windows Defences](#windows-defences) (16)
 	- [Mac OS Defences](#mac-os-defences) (2)
 	- [Anti-Malware](#anti-malware) (2)
 - **Development**
@@ -241,7 +241,7 @@ that makes a good alternative to BitLocker.
 
 ### Search Engines
 
-- **[<img src='https://duckduckgo.com/favicon.png' width='14' alt='' /> DuckDuckGo](https://duckduckgo.com)** - DuckDuckGo is a very user-friendly, fast and secure search engine. It's totally private, with no trackers, cookies or ads. It's also highly customisable, with dark-mode, many languages and features. T[…](https://awesome-privacy.xyz/essentials/search-engines/duckduckgo "View full DuckDuckGo report") 
+- **[<img src='https://duckduckgo.com/favicon.png' width='14' alt='' /> DuckDuckGo](https://duckduckgo.com)** - DuckDuckGo is a user-friendly and fast secure search engine. While it doesn't use trackers or cookies, there are search-related ads. It's also highly customisable, with theming, languages, bangs and p[…](https://awesome-privacy.xyz/essentials/search-engines/duckduckgo "View full DuckDuckGo report") 
 - **[<img src='https://avatars.githubusercontent.com/u/1692504' width='14' alt='' /> Qwant](https://www.qwant.com)** - French service that aggregates Bings results, with its own results. Qwant doesn't plant any cookies, nor have any trackers or third-party advertising. It returns non-biased search results, with no pro[…](https://awesome-privacy.xyz/essentials/search-engines/qwant "View full Qwant report") 
 - **[<img src='https://www.startpage.com/favicon.ico' width='14' alt='' /> Startpage](https://www.startpage.com)** - Dutch search engine that searches on Google and shows the results (slightly rearranged). It has several configurations that improve privacy during use (it is not open source) 
 - **[<img src='https://i.ibb.co/GH1n4wf/Brave-Search-Icon.png' width='14' alt='' /> Brave Search](https://search.brave.com/)** - Brave Search is a privacy-focused search engine that does not track users or their searches, does not use secret algorithms or user profiling, and is based on its own search index. 
@@ -471,7 +471,7 @@ The following browser add-ons give you better control over what content is able 
 - **[<img src='https://amiunique.org/favicon.ico' width='14' alt='' /> AmIUnique Timeline](https://amiunique.org/timeline)** - Enables you to better understand the evolution of browser fingerprints (which is what websites use to uniquely identify and track you). **Download**: [Chrome](https://chrome.google.com/webstore/detail/amiunique/pigjfndpomdldkmoaiiigpbncemhjeca) - [Firefox](https://addons.mozilla.org/en-US/firefox/addon/amiunique)[…](https://awesome-privacy.xyz/security-tools/browser-extensions/amiunique-timeline "View full AmIUnique Timeline report") 
 - **[<img src='https://lh3.googleusercontent.com/c78SvSl7OD2thLmgX5irlo1tvxGVtkziKTKmp7VByjvvrw2czkP2cFbbRASmopQBV9-PpNBD_NOqt8WIC4JVc0WB3A=s60' width='14' alt='' /> Netcraft Extension](https://www.netcraft.com/apps/browser)** - Notifies you when visiting a known or potential phishing site, and detects suspicious JavaScript (including skimmers and miners). Also provides a simple rating for a given site's legitimacy and securi[…](https://awesome-privacy.xyz/security-tools/browser-extensions/netcraft-extension "View full Netcraft Extension report") 
 - **[<img src='https://icon.horse/icon/linguister.io' width='14' alt='' /> Linguist](https://linguister.io)** - Linguist is a privacy‑focused translation solution in-browser that has an embedded offline translator and lets users create [custom translators](https://linguister.io/docs/CustomTranslator) to use any translation API, even if it's locally deployed[…](https://awesome-privacy.xyz/security-tools/browser-extensions/linguist "View full Linguist report") 
-- **[<img src='https://raw.githubusercontent.com/libredirect/browser_extension/refs/heads/master/src/assets/images/libredirect.svg' width='14' alt='' /> LibRedirect](https://libredirect.github.io)** - A browser extension that redirects popular sites to alternative privacy friendly frontends **Download**: [Firefox](https://addons.mozilla.org/firefox/addon/libredirect/) - [Chrome](https://libredirect.github.io/download_chromium.html)[…](https://awesome-privacy.xyz/security-tools/browser-extensions/libredirect "View full LibRedirect report") 
+- **[<img src='https://raw.githubusercontent.com/libredirect/browser_extension/refs/heads/master/src/assets/images/libredirect.svg' width='14' alt='' /> LibRedirect](https://libredirect.manerakai.com)** - A browser extension that redirects popular sites to alternative privacy friendly frontends **Download**: [Firefox](https://addons.mozilla.org/firefox/addon/libredirect/) - [Chrome](https://libredirect.github.io/download_chromium.html)[…](https://awesome-privacy.xyz/security-tools/browser-extensions/libredirect "View full LibRedirect report") 
 
 <details>
 <summary>⚠️ <b>Word of Warning</b></summary>
@@ -496,8 +496,8 @@ The following browser add-ons give you better control over what content is able 
 
 ### Mobile Apps
 
-- **[<img src='https://play-lh.googleusercontent.com/dIIbpr1fh-w7ykJJmfLyu6UH1HJ8bpFKEmyUlKqYHSEinG8v_B7mlqgeTzlFRhs0Uw=s48' width='14' alt='' /> Orbot](https://support.torproject.org/glossary/orbot/)** - System-wide Tor proxy, which encrypts your connection through multiple nodes. You can also use it alongside Tor Browser to access .onion sites. 
-- **[<img src='https://play-lh.googleusercontent.com/XEd1PsXgOSNNpD2hlZMvigIOJ9e5JCL2KhCJ4X984Az5EFw6YiecDebqdsZ12VNU2kPu=w240-h480' width='14' alt='' /> NetGuard](https://netguard.me/)** - A firewall app for Android, which does not require root. NetGuard provides simple and advanced ways to block access to the internet, where applications and addresses can individually be allowed or den[…](https://awesome-privacy.xyz/security-tools/mobile-apps/netguard "View full NetGuard report") 
+- **[<img src='https://raw.githubusercontent.com/guardianproject/orbot-android/master/fastlane/metadata/android/en-US/images/icon.png' width='14' alt='' /> Orbot](https://orbot.app/)** - System-wide Tor proxy, which encrypts your connection through multiple nodes. You can also use it alongside Tor Browser to access .onion sites. 
+- **[<img src='https://raw.githubusercontent.com/M66B/NetGuard/master/app/src/main/ic_launcher-web.png' width='14' alt='' /> NetGuard](https://netguard.me/)** - A firewall app for Android, which does not require root. NetGuard provides simple and advanced ways to block access to the internet, where applications and addresses can individually be allowed or den[…](https://awesome-privacy.xyz/security-tools/mobile-apps/netguard "View full NetGuard report") 
 - **[<img src='https://play-lh.googleusercontent.com/ywvaxXcH90yttClJvgHR5UsfDnGS_YNtFiW6fQJm1p7_6HX9Dbn0v2J9gIzOOKFYQOnA=w240-h480' width='14' alt='' /> Island](https://island.oasisfeng.com/)** - A sandbox environment, allowing you to clone selected apps and run them in an isolated box, preventing it from accessing your personal data, or device information. 
 - **[<img src='https://gitlab.com/uploads/-/system/project/avatar/18237274/ic_launcher-playstore.png?width=48' width='14' alt='' /> Insular](https://gitlab.com/secure-system/Insular)** - An actively-maintained fork of the Island project with additional enhancements 
 - **[<img src='https://exodus-privacy.eu.org/img/favicons/apple-touch-icon.png' width='14' alt='' /> Exodus](https://exodus-privacy.eu.org/en/page/what/#android-app)** - Shows which trackers, each of your installed apps is using, so that you can better understand how your data is being collected. Uses data from the Exodus database of scanned APKs. 
@@ -509,7 +509,6 @@ The following browser add-ons give you better control over what content is able 
 - **[<img src='https://1.1.1.1/favicon.ico' width='14' alt='' /> 1.1.1.1](https://1.1.1.1/)** - Lets you use CloudFlares fast and secure 1.1.1.1 DNS, with DNS over HTTPS, and also has the option to enable CloudFlares WARP+ VPN. 
 - **[<img src='https://avatars.githubusercontent.com/u/62335928?s=200&v=4' width='14' alt='' /> Fing App](https://www.fing.com/products/fing-app)** - A network scanner to help you monitor and secure your WiFi network. The app is totally free, but to use the advanced controls, you will need a Fing Box. 
 - **[<img src='https://blokada.org/favicon.png' width='14' alt='' /> Blokada](https://blokada.org/)** - This application blocks ads and trackers, doesn't require root and works for all the apps on your Android phone. Check out how it works here. 
-- **[<img src='https://f-droid.org/repo/icons-640/de.srlabs.snoopsnitch.50.png' width='14' alt='' /> SnoopSnitch](https://opensource.srlabs.de/projects/snoopsnitch)** - Collects and analyzes mobile radio data to make you aware of your mobile network security and to warn you about threats like fake base stations (IMSI catchers), user tracking and over-the-air updates.[…](https://awesome-privacy.xyz/security-tools/mobile-apps/snoopsnitch "View full SnoopSnitch report") 
 - **[<img src='https://trackercontrol.org/images/logo.png' width='14' alt='' /> TrackerControl](https://trackercontrol.org/)** - Monitor and control hidden data collection in mobile apps about user behavior/ tracking. Get from [F-Droid](https://f-droid.org/en/packages/net.kollnig.missioncontrol.fdroid/) 
 - **[<img src='https://f-droid.org/repo/com.smilla.greentooth/en-US/icon_8WaREJ2f7uFLdL9QGDL4xSqsIRB7wgdwv9BY_ET0WEg=.png' width='14' alt='' /> Greentooth](https://gitlab.com/nbergman/greentooth)** - Auto-disable Bluetooth, then it is not being used. Saves battery, and prevent some security risks. Get from [F-Droid](https://f-droid.org/en/packages/com.smilla.greentooth/) 
 - **[<img src='https://f-droid.org/repo/com.wesaphzt.privatelock/en-US/icon_c5gFGZ7VhAR-kLihEfLVrStxIushKtWADc7pR1hQ6b4=.png' width='14' alt='' /> PrivateLock](https://github.com/wesaphzt/privatelock)** - Auto lock your phone based on movement force/ acceleration. Get from [F-Droid](https://f-droid.org/en/packages/com.wesaphzt.privatelock/) See also [PluckLock](https://github.com/SyntaxBlitz/PluckLock) 
@@ -788,7 +787,6 @@ battle-tested protocol, that has been in use since 2013, and is still widely use
 - **[<img src='https://nlnetlabs.nl/extra/favicons/favicon-196x196.png' width='14' alt='' /> Unbound](https://nlnetlabs.nl/projects/unbound)** - Validating, recursive, caching DNS resolve with support for DNS-over-TLS. Designed to be fast, lean, and secure Unbound incorporates modern features based on open standards. It's fully open source, an[…](https://awesome-privacy.xyz/networking/dns-clients/unbound "View full Unbound report") 
 - **[<img src='https://raw.githubusercontent.com/Ch4t4r/Nebulo/master/app/src/main/res/mipmap-xxhdpi/ic_launcher.png' width='14' alt='' /> Nebulo](https://nebulo.app)** - Non-root, small-sized DNS changer utilizing DNS-over-HTTPS and DNS-over-TLS. (Note, since this uses Android's VPN API, it is not possible to run a VPN while using Nebulo.) 
 - **[<img src='https://rethinkdns.com/ico/app_icon.svg' width='14' alt='' /> RethinkDNS & Firewall](https://rethinkdns.com/app)** - Free and open source DNS changer with support for DNS-over-HTTPS, DNS-over-Tor, and DNSCrypt v3 with Anonymized Relays. (Note, since this uses Android's VPN API, it is not possible to run a VPN while[…](https://awesome-privacy.xyz/networking/dns-clients/rethinkdns-and-firewall "View full RethinkDNS & Firewall report") 
-- **[<img src='https://github.com/s-s/dnscloak/blob/master/src/images/logo.png?raw=true' width='14' alt='' /> DNS Cloak](https://apps.apple.com/us/app/dnscloak-secure-dns-client/id1452162351)** - Simple all that allows for the use for dnscrypt-proxy 2 on an iPhone. 
 - **[<img src='https://dnsprivacy.org/images/favicon.png' width='14' alt='' /> Stubby](https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Daemon+-+Stubby)** - Acts as a local DNS Privacy stub resolver (using DNS-over-TLS). Stubby encrypts DNS queries sent from a client machine (desktop or laptop) to a DNS Privacy resolver increasing end user privacy. Stubby[…](https://awesome-privacy.xyz/networking/dns-clients/stubby "View full Stubby report") 
 
 <p align="right"><sup><a href="#top">⬆️ [Back to Top]</a></sub></p>
@@ -1370,7 +1368,7 @@ the disk, before you destroy, sell or give away a hard drive.
 - **[<img src='https://icon.horse/icon/dban.org' width='14' alt='' /> DBAN](https://dban.org)** - Darik's Boot and Nuke ("DBAN") is a self-contained boot disk that securely wipes the hard disks of most computers. DBAN will automatically and completely delete the contents of any hard disk that it c[…](https://awesome-privacy.xyz/utilities/data-erasers/dban "View full DBAN report") 
 - **[<img src='https://icon.horse/icon/github.com' width='14' alt='' /> nwipe](https://github.com/martijnvanbrummelen/nwipe)** - C-based secure light-weight disk eraser, operated through the easy-to-use CLI or a GUI interface. 
 - **[<img src='https://www.gnu.org/favicon.ico' width='14' alt='' /> shred](https://www.gnu.org/software/coreutils/manual/html_node/shred-invocation.html)** - A CLI utility that can be used to securely delete files and devices, to make them extremely difficult to recover. 
-- **[<img src='https://icon.horse/icon/www.systutorials.com' width='14' alt='' /> Secure Remove](https://www.systutorials.com/docs/linux/man/1-srm/)** - CLI utility for securely removing files, directories and whole disks, works on Linux, BSD and MacOS. 
+- **[<img src='https://pixelflare.cc/alicia/icons/srm' width='14' alt='' /> Secure Remove](https://srm.sourceforge.net/srm.html)** - CLI utility for securely removing files, directories and whole disks, works on Linux, BSD and MacOS. 
 - **[<img src='https://drfone.wondershare.com/favicon.ico' width='14' alt='' /> Mr. Phone](https://drfone.wondershare.com)** - Proprietary, closed-source suite of forensic data tools for mobile. The data eraser allows for both Android and iOS to be fully wiped, through connecting them to a PC. 
 
 <details>
@@ -1602,7 +1600,6 @@ See: [Windows 10 security guide](https://heimdalsecurity.com/en/windows-10-secur
 - **[<img src='https://www.netlimiter.com/favicon.ico' width='14' alt='' /> NetLimiter](https://www.netlimiter.com)** - Internet traffic control and monitoring tool. 
 - **[<img src='https://icon.horse/icon/docs.microsoft.com' width='14' alt='' /> SigCheck](https://docs.microsoft.com/en-us/sysinternals/downloads/sigcheck)** - A CLI utility that shows file version number, timestamp information, and digital signature details. 
 - **[<img src='https://www.bleachbit.org/sites/default/files/zen_classic_logo_0.png' width='14' alt='' /> BleachBit](https://www.bleachbit.org)** - Clears cache and deletes temporary files very effectively. This frees up disk space, improves performance, but most importantly helps to protect privacy. 
-- **[<img src='https://icon.horse/icon/github.com' width='14' alt='' /> Windows Secure Baseline](https://github.com/nsacyber/Windows-Secure-Host-Baseline)** - Group Policy objects, compliance checks, and configuration tools that provide an automated and flexible approach for securely deploying and maintaining the latest releases of Windows 10. 
 - **[<img src='https://www.usb-antivirus.com/wp-content/uploads/2015/12/logo-usbfix-80x80.png.webp' width='14' alt='' /> USBFix](https://www.usb-antivirus.com)** - Detects infected USB removable devices. 
 - **[<img src='http://www2.gmer.net/favicon.ico' width='14' alt='' /> GMER](http://www.gmer.net)** - Rootkit detection and removal utility. 
 - **[<img src='https://schiffer.tech/img/logos/sw.png' width='14' alt='' /> ScreenWings](https://schiffer.tech/screenwings.html)** - Blocks malicious background applications from taking screenshots. 

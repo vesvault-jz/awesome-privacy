@@ -537,16 +537,17 @@ categories:
       - name: DuckDuckGo
         url: https://duckduckgo.com
         icon: https://duckduckgo.com/favicon.png
-        openSource: true
         tosdrId: 222
         iosApp: https://apps.apple.com/us/app/duckduckgo-private-browser/id663592361
         androidApp: com.duckduckgo.mobile.android
         subreddit: duckduckgo
         description: |
-          DuckDuckGo is a very user-friendly, fast and secure search engine. It's totally
-          private, with no trackers, cookies or ads. It's also highly customisable, with
-          dark-mode, many languages and features. They even have a [.onion](https://3g2upl4pq6kufc4m.onion)
-          URL, for use with Tor and a [no Javascript version](https://duckduckgo.com/html/)
+          DuckDuckGo is a user-friendly and fast secure search engine.
+          While it doesn't use trackers or cookies, there are search-related ads.
+          It's also highly customisable, with theming, languages, bangs and plugins.
+          There's also an [.onion](https://3g2upl4pq6kufc4m.onion) URL,
+          and a [no Javascript version](https://duckduckgo.com/html/).
+          Note: Search data is primarily sourced from Bing, and DDG operates from within the US.
 
       - name: Qwant
         url: https://www.qwant.com
@@ -1538,7 +1539,7 @@ categories:
           [Chrome](https://chrome.google.com/webstore/detail/gbefmodhlophhakmoecijeppjblibmie) / [Firefox](https://addons.mozilla.org/addon/linguist-translator/)
 
       - name: LibRedirect
-        url: https://libredirect.github.io
+        url: https://libredirect.manerakai.com
         github: libredirect/browser_extension
         icon: https://raw.githubusercontent.com/libredirect/browser_extension/refs/heads/master/src/assets/images/libredirect.svg
         description: |
@@ -1566,9 +1567,11 @@ categories:
     - name: Mobile Apps
       services:
       - name: Orbot
-        url: https://support.torproject.org/glossary/orbot/
-        github: guardianproject/orbot
-        icon: https://play-lh.googleusercontent.com/dIIbpr1fh-w7ykJJmfLyu6UH1HJ8bpFKEmyUlKqYHSEinG8v_B7mlqgeTzlFRhs0Uw=s48
+        url: https://orbot.app/
+        github: guardianproject/orbot-android
+        icon: https://raw.githubusercontent.com/guardianproject/orbot-android/master/fastlane/metadata/android/en-US/images/icon.png
+        androidApp: org.torproject.android
+        iosApp: https://apps.apple.com/us/app/orbot/id1609461599
         description: |
           System-wide Tor proxy, which encrypts your connection through multiple nodes.
           You can also use it alongside Tor Browser to access .onion sites.
@@ -1576,8 +1579,8 @@ categories:
       - name: NetGuard
         url: https://netguard.me/
         github: M66B/NetGuard
-        icon: https://play-lh.googleusercontent.com/XEd1PsXgOSNNpD2hlZMvigIOJ9e5JCL2KhCJ4X984Az5EFw6YiecDebqdsZ12VNU2kPu=w240-h480
-        androidApp: org.torproject.android
+        icon: https://raw.githubusercontent.com/M66B/NetGuard/master/app/src/main/ic_launcher-web.png
+        androidApp: eu.faircode.netguard
         description: |
           A firewall app for Android, which does not require root. NetGuard provides simple
           and advanced ways to block access to the internet, where applications and addresses
@@ -1688,16 +1691,6 @@ categories:
         description: |
           This application blocks ads and trackers, doesn't require root and works for all the apps on your
           Android phone. Check out how it works here.
-
-      - name: SnoopSnitch
-        url: https://opensource.srlabs.de/projects/snoopsnitch
-        github: srlabs/snoopsnitch
-        icon: https://f-droid.org/repo/icons-640/de.srlabs.snoopsnitch.50.png
-        androidApp: de.srlabs.snoopsnitch
-        description: |
-          Collects and analyzes mobile radio data to make you aware of your mobile network security and to
-          warn you about threats like fake base stations (IMSI catchers), user tracking and over-the-air updates.
-          Get from [F-Droid](https://f-droid.org/en/packages/de.srlabs.snoopsnitch/)
 
       - name: TrackerControl
         url: https://trackercontrol.org/
@@ -2397,14 +2390,6 @@ categories:
           Free and open source DNS changer with support for DNS-over-HTTPS, DNS-over-Tor, and DNSCrypt v3
           with Anonymized Relays. (Note, since this uses Android's VPN API, it is not possible to run a
           VPN while using RethinkDNS + Firewall.)
-
-      - name: DNS Cloak
-        url: https://apps.apple.com/us/app/dnscloak-secure-dns-client/id1452162351
-        github: s-s/dnscloak
-        followWith: iOS
-        icon: https://github.com/s-s/dnscloak/blob/master/src/images/logo.png?raw=true
-        description: |
-          Simple all that allows for the use for dnscrypt-proxy 2 on an iPhone.
 
       - name: Stubby
         url: https://dnsprivacy.org/wiki/display/DP/DNS+Privacy+Daemon+-+Stubby
@@ -3856,9 +3841,10 @@ categories:
           A CLI utility that can be used to securely delete files and devices, to make them extremely difficult to recover.
 
       - name: Secure Remove
-        url: https://www.systutorials.com/docs/linux/man/1-srm/
+        url: https://srm.sourceforge.net/srm.html
         followWith: Unix
         openSource: true
+        icon: https://pixelflare.cc/alicia/icons/srm
         description: |
           CLI utility for securely removing files, directories and whole disks, works on Linux, BSD and MacOS.
 
@@ -4262,14 +4248,6 @@ categories:
           Clears cache and deletes temporary files very effectively.
           This frees up disk space, improves performance, but most importantly
           helps to protect privacy.
-
-      - name: Windows Secure Baseline
-        url: https://github.com/nsacyber/Windows-Secure-Host-Baseline
-        github: nsacyber/Windows-Secure-Host-Baseline
-        description: |
-          Group Policy objects, compliance checks, and configuration tools that
-          provide an automated and flexible approach for securely deploying and
-          maintaining the latest releases of Windows 10.
 
       - name: USBFix
         url: https://www.usb-antivirus.com

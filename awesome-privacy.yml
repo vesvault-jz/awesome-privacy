@@ -4837,6 +4837,19 @@ categories:
         followWith: Self-hosted
         openSource: true
 
+      - name: rotki
+        description: |
+          A self-hosted, opensource, privacy-first portfolio tracking and accounting tool
+          for crypto and more. Support for all 3 major Operating systems and docker.
+          The tool focus is on data self-sovereignty.
+        url: https://rotki.com
+        icon: https://raw.githubusercontent.com/rotki/rotki/develop/frontend/app/public/assets/images/rotkehlchen_no_text.png
+        github: rotki/rotki
+        followWith: Self-hosted
+        openSource: true
+        acceptsCrypto: true
+        subreddit: rotki
+
       notableMentions: |
         Spreadsheets remain a popular choice for managing budgets and financial planning.
         [Collabora](https://nextcloud.com/collaboraonline) or

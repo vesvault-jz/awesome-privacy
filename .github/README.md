@@ -72,6 +72,7 @@ corporations, governments, and hackers from logging, storing or selling your per
 	- [Secret Sharing](#secret-sharing) (3)
 	- [File Drop](#file-drop) (2)
 	- [Browser Sync](#browser-sync) (4)
+	- [Habit Trackers](#habit-trackers) (1)
 	- [Secure Conference Calls](#secure-conference-calls) (2)
 	- [Maps & Navigation](#maps--navigation) (1)
 - **Utilities**
@@ -1214,6 +1215,14 @@ It is recommended to encrypt files on your client machine, before syncing to the
 > Available on desktop, mobile, web and through a browser extension.
 > The catch is that it is not open source, there is a free and premium plan, but no option for self-hosting.
 > </details>
+
+<p align="right"><sup><a href="#top">⬆️ [Back to Top]</a></sub></p>
+
+---
+
+### Habit Trackers
+
+- **[<img src='https://openhabittracker.net/icons/icon-512.png' width='14' alt='' /> OpenHabitTracker](https://openhabittracker.net)** - Free, open source habit tracker. Take notes, plan tasks, and track habits. All data stored locally or self-hosted via Docker. No accounts required. 
 
 <p align="right"><sup><a href="#top">⬆️ [Back to Top]</a></sub></p>
 

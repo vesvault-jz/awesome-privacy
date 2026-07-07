@@ -1,8 +1,9 @@
 {
-  "generatedAt": "2026-07-07T11:04:29Z",
+  "generatedAt": "2026-07-07T11:13:42Z",
   "processedShas": [
     "02125ec429ec1ce9c5acdec1604703cb058a7887",
     "02231fb0a59ee43f93c6d0143640284cb7587d71",
+    "02da4de50e6e90ed41d4d4c4fe5d8615a85a45a0",
     "0565145265ae63168dafcd48c5e13d8604691a10",
     "0720acdb7bc3f8b7f100cbbc7faea3fc476067df",
     "079c3242b4ca058a8ccb252da4dccd4f30870542",
@@ -49,6 +50,7 @@
     "3a462d6d2f792b391753a9b66cffa5e42dd68c55",
     "3c768cfd34bb4a75c740815874dfb99b31233fa7",
     "3e760b3a774e6b65f62866dc3effa5b504a4e10f",
+    "401776af65289a4a71318462202a3b6a924c44bc",
     "4145b323ab2b8e93d05392ba12ace9ee815c27f9",
     "4155d6bcfc0d01136a323bfb841452e478be1fa6",
     "41e72fe5b4c16c5ffced9d3b85e8ddb7c2011f5e",
@@ -126,6 +128,7 @@
     "aadc778402f75a16d2de88b7d38462c3d626b024",
     "ab6c8a515359942d7c20d9244904819c144c5db5",
     "ab9150fa71812ae4c395d499f1500d3c91b2b54c",
+    "acc69c83f9aae1f19319c121faccf7b77ce7d2a6",
     "afc1bddb019a762fc3f2741547ffdc205c0bfe19",
     "b2113d1d8325447daf6cfa9c12a53f1fbcf33928",
     "b26fbcfeff3ef2cdd0394d6cb2df5711c4e7d31b",
@@ -163,12 +166,14 @@
     "dd7657fc7933d73d7ecb0d3c5ebea2c0e64b26c7",
     "dec42f0572b2f52fad5ccd5f52ae6f4ae0b18721",
     "df686cd77a1ff89ba9a318089d46c1585b63b572",
+    "e1235f1a6cf8694cb54f2c612de154f90db86a07",
     "e192c0a4ae62d6d5dc4f3d163825b6b90205527a",
     "e33ee115950f0d56c764e5d0581e1d697afbb63f",
     "e52675c9d125682d9ee09b4d681173bf90bfdc7f",
     "e55f08c8337bf322a0b10d1b6c9827cb2bac5a64",
     "e7474c579b7e33b3c47ed76492068d914e4566f1",
     "e9b1fee82705ca9b52a9db6e081d46bc4c417f01",
+    "eb3b8411aea7bca9e3093a66b8313ade4e516ffc",
     "ec4cbec4affe6d6ddcb178504e137d552af3771f",
     "ec4fd408e533d274e7d5ef3508cb691660da58b3",
     "ec9119761c83aeafc5cf436dc2306280212c2470",
@@ -315,6 +320,37 @@
     659
   ],
   "entries": [
+    {
+      "date": "2026-07-07",
+      "sha": "e1235f1a6cf8694cb54f2c612de154f90db86a07",
+      "pr": null,
+      "changes": {
+        "services": {
+          "moved": [
+            {
+              "name": "OpenHabitTracker",
+              "from": {
+                "category": "Productivity",
+                "section": "Digital Notes"
+              },
+              "to": {
+                "category": "Productivity",
+                "section": "Habit Trackers"
+              }
+            }
+          ]
+        },
+        "sections": {
+          "added": [
+            {
+              "name": "Habit Trackers",
+              "category": "Productivity"
+            }
+          ]
+        },
+        "categories": {}
+      }
+    },
     {
       "date": "2026-07-07",
       "sha": "f37535b641525017936ba96637aac18944da4a14",
@@ -3189,6 +3225,45 @@
               "name": "Uruky",
               "category": "Essentials",
               "section": "Search Engines"
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "sha": "401776af65289a4a71318462202a3b6a924c44bc",
+      "pr": null,
+      "changes": {
+        "services": {
+          "modified": [
+            {
+              "name": "OpenHabitTracker",
+              "category": "Productivity",
+              "section": "Digital Notes",
+              "fields": [
+                "icon"
+              ]
+            }
+          ]
+        },
+        "sections": {},
+        "categories": {}
+      }
+    },
+    {
+      "date": "2026-02-27",
+      "sha": "acc69c83f9aae1f19319c121faccf7b77ce7d2a6",
+      "pr": null,
+      "changes": {
+        "services": {
+          "added": [
+            {
+              "name": "OpenHabitTracker",
+              "category": "Productivity",
+              "section": "Digital Notes"
             }
           ]
         },

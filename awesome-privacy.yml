@@ -1062,16 +1062,12 @@ categories:
           with paid plans (from $3/month) adding encrypted IMAP/POP3 mailboxes.
           Audited by Cure53 in 2026.
 
-      - name: ProtonMail
-        followWith: Professional plan or higher
-        url: https://protonmail.com/pricing
-        github: ProtonMail/WebClients
-        icon: https://proton.me/favicons/android-chrome-192x192.png
-        tosdrId: 491
-        openSource: true
-        description: |
-          If you already have ProtonMail's Professional (€8/month) or Visionary (€30/month) package,
-          then an implementation of this feature is available via the Catch-All Email feature.
+      notableMentions: >
+        Some full email providers include aliasing or catch-all addresses as a built-in
+        (usually premium) feature.
+        For example, [Proton](https://proton.me) (catch-all, plus hide-my-email aliases via Proton Pass),
+        [StartMail](https://www.startmail.com), [mailbox.org](https://mailbox.org) and
+        [Posteo](https://posteo.de) all offer this.
 
     ##################################
     ###### Mail Security Tools ######

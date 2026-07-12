@@ -1024,16 +1024,6 @@ categories:
           An open source anonymous email forwarding service, allowing you to
           create unlimited email aliases. Has a free plan.
 
-      - name: 33Mail
-        url: http://33mail.com
-        icon: https://33mail.com/favicon.ico
-        openSource: false
-        tosdrId: 8301
-        description: |
-          A long-standing aliasing service. As well as receiving, 33Mail also lets you reply
-          to forwarded addresses anonymously. Free plan, as well as Premium plan ($1/ month)
-          if you'd like to use a custom domain. Note that 33Mail usese Google Analytics.
-
       - name: SimpleLogin
         url: https://simplelogin.io
         github: simple-login/app

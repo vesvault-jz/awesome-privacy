@@ -1926,6 +1926,16 @@ categories:
           description: |
             A tool from Netcraft, for analysing what any given website is running, where it's located and information about its
             host, registrar, IP and SSL certificates.
+          
+        - name: Paperweight
+          description: |
+            Paperweight scans your inbox to map your digital footprint, then helps you take back control and delete your data.
+          url: https://www.paperweight.email/
+          icon: https://www.paperweight.email/icon.png
+          github: wslyvh/paperweight
+          followWith: Desktop [Linux, Mac & Windows]
+          openSource: true
+          acceptsCrypto: true
 
       wordOfWarning: >
         Browsers are inherently insecure, be careful when uploading, or entering personal details.
